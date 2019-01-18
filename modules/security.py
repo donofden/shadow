@@ -11,3 +11,4 @@ commandWords = ["prime","sleep"]
 #This is the main function which will be execute when the above command words are said
 def execute(command):
 	os.system('pmset displaysleepnow')
+	return
