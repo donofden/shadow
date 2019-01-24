@@ -108,16 +108,17 @@ class Control():
 
                 print("The word(s) '" + command + "' have been said")
                 for module in self.modules:
-                    foundWords = []
+                    found_words = []
                     for word in module.commandWords:
                         if str(word) in command:
-                            foundWords.append(str(word))
-                    if len(foundWords) == len(module.commandWords):
+                            found_words.append(str(word))
+                    if len(found_words) == len(module.commandWords):
                         try:
                             module.execute(command)
                             print("The module {0} has been executed "
                                   "successfully.".format(module.moduleName))
-                        except:
+                        except Exception as e:
+                            print(e)
                             print("[ERROR] There has been an error "
                                   "when running the {0} module".format(
                                       module.moduleName))
