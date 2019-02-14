@@ -1,3 +1,5 @@
+[![HitCount](http://hits.dwyl.io/donofden/shadow.svg)](http://hits.dwyl.io/donofden/shadow)
+
 # shadow
 Shadow - My Personal Assistant: Controled Over Siri
 * No extra hardware required
